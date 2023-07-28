@@ -6,16 +6,15 @@ class WeatherImage extends StatelessWidget {
     super.key,
   });
 
+  // 後のセッションでSvgPicture.assetで参照予定
   final String weatherImage;
 
+  // childにSvgPictureで出し分ける
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
+    return const AspectRatio(
       aspectRatio: 1,
-      child: Image.asset(
-        // FIX: 後のSessionでsvgの画像を追加する
-        'assets/images/$weatherImage.svg',
-      ),
+      child: Placeholder(),
     );
   }
 }
