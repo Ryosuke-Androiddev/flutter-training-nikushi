@@ -22,7 +22,7 @@ class WeatherForeCastScreen extends StatelessWidget {
                 minTemperature: '**℃',
               ),
             ),
-            Expanded(
+            Flexible(
               child: Column(
                 children: [
                   SizedBox(
