@@ -10,7 +10,7 @@ class WeatherInfoSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        WeatherImage(weatherImage: ''),
+        WeatherImage(),
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 16),
           child: Row(
