@@ -9,12 +9,12 @@ class WeatherForeCastScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: Column(
           children: [
-            const Spacer(),
-            const FractionallySizedBox(
+            Spacer(),
+            FractionallySizedBox(
               widthFactor: 0.5,
               child: WeatherInfoSection(
                 weatherImage: '',
@@ -25,19 +25,12 @@ class WeatherForeCastScreen extends StatelessWidget {
             Expanded(
               child: Column(
                 children: [
-                  const SizedBox(
+                  SizedBox(
                     height: 80,
                   ),
                   FractionallySizedBox(
                     widthFactor: 0.5,
-                    child: TextButtonSection(
-                      closeFeatureTitle: 'Close',
-                      closeFeatureTitleColor: Colors.blue,
-                      onClosePressed: () {},
-                      reloadFeatureTitle: 'Reload',
-                      reloadFeatureTitleColor: Colors.blue,
-                      onReloadPressed: () {},
-                    ),
+                    child: TextButtonSection(),
                   ),
                 ],
               ),

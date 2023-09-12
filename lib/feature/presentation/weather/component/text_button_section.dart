@@ -1,41 +1,32 @@
-import 'package:flutter/widgets.dart';
-import 'package:flutter_training/feature/presentation/weather/component/action_trigger_text_button.dart';
+import 'package:flutter/material.dart';
 
 class TextButtonSection extends StatelessWidget {
   const TextButtonSection({
-    required this.closeFeatureTitle,
-    required this.closeFeatureTitleColor,
-    required this.onClosePressed,
-    required this.reloadFeatureTitle,
-    required this.reloadFeatureTitleColor,
-    required this.onReloadPressed,
     super.key,
   });
 
-  final String closeFeatureTitle;
-  final Color closeFeatureTitleColor;
-  final VoidCallback onClosePressed;
-  final String reloadFeatureTitle;
-  final Color reloadFeatureTitleColor;
-  final VoidCallback onReloadPressed;
-
+  // TODO: onPressedの処理をそれぞれ実装する
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Expanded(
-          child: ActionTriggerTextButton(
-            featureTitle: closeFeatureTitle,
-            featureTitleColor: closeFeatureTitleColor,
-            onPressed: onClosePressed,
+          child: TextButton(
+            onPressed: () {},
+            child: const Text(
+              'Close',
+              style: TextStyle(color: Colors.blue),
+            ),
           ),
         ),
         Expanded(
-          child: ActionTriggerTextButton(
-            featureTitle: reloadFeatureTitle,
-            featureTitleColor: reloadFeatureTitleColor,
-            onPressed: onReloadPressed,
+          child: TextButton(
+            onPressed: () {},
+            child: const Text(
+              'Reload',
+              style: TextStyle(color: Colors.blue),
+            ),
           ),
         ),
       ],
