@@ -16,11 +16,7 @@ class WeatherForeCastScreen extends StatelessWidget {
             Spacer(),
             FractionallySizedBox(
               widthFactor: 0.5,
-              child: WeatherInfoSection(
-                weatherImage: '',
-                maxTemperature: '**℃',
-                minTemperature: '**℃',
-              ),
+              child: WeatherInfoSection(),
             ),
             Flexible(
               child: Column(
