@@ -5,7 +5,7 @@ class WeatherImage extends StatelessWidget {
     super.key,
   });
 
-  // childにSvgPictureで出し分ける
+  // TODO: enumとSvgPictureで画像を出し分ける
   @override
   Widget build(BuildContext context) {
     return const AspectRatio(
