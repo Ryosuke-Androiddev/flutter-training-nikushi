@@ -8,25 +8,25 @@ class WeatherInfoSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
         WeatherImage(),
-        const SizedBox(
-          height: 16.0,
+        SizedBox(
+          height: 16,
         ),
         Row(
           children: [
             Expanded(
               child: Text(
                 '**℃',
-                style: const TextStyle(color: Colors.blue),
+                style: TextStyle(color: Colors.blue),
                 textAlign: TextAlign.center,
               ),
             ),
             Expanded(
               child: Text(
                 '**℃',
-                style: const TextStyle(color: Colors.red),
+                style: TextStyle(color: Colors.red),
                 textAlign: TextAlign.center,
               ),
             )
