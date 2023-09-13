@@ -11,26 +11,26 @@ class WeatherInfoSection extends StatelessWidget {
     return Column(
       children: [
         WeatherImage(),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 16),
-          child: Row(
-            children: [
-              Expanded(
-                child: Text(
-                  '**℃',
-                  style: const TextStyle(color: Colors.blue),
-                  textAlign: TextAlign.center,
-                ),
+        const SizedBox(
+          height: 16.0,
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Text(
+                '**℃',
+                style: const TextStyle(color: Colors.blue),
+                textAlign: TextAlign.center,
               ),
-              Expanded(
-                child: Text(
-                  '**℃',
-                  style: const TextStyle(color: Colors.red),
-                  textAlign: TextAlign.center,
-                ),
-              )
-            ],
-          ),
+            ),
+            Expanded(
+              child: Text(
+                '**℃',
+                style: const TextStyle(color: Colors.red),
+                textAlign: TextAlign.center,
+              ),
+            )
+          ],
         ),
       ],
     );
