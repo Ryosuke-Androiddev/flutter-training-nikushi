@@ -5,7 +5,7 @@ class TextButtonSection extends StatelessWidget {
     super.key,
   });
 
-  // TODO: onPressedの処理をそれぞれ実装する
+  // onPressedの処理をそれぞれ実装する
   @override
   Widget build(BuildContext context) {
     return Row(
