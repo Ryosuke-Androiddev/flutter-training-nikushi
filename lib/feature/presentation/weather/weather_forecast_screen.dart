@@ -11,27 +11,24 @@ class WeatherForeCastScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Column(
-          children: [
-            Spacer(),
-            FractionallySizedBox(
-              widthFactor: 0.5,
-              child: WeatherInfoSection(),
-            ),
-            Flexible(
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 80,
-                  ),
-                  FractionallySizedBox(
-                    widthFactor: 0.5,
-                    child: TextButtonSection(),
-                  ),
-                ],
+        child: FractionallySizedBox(
+          widthFactor: 0.5,
+          child: Column(
+            children: [
+              Spacer(),
+              WeatherInfoSection(),
+              Flexible(
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 80,
+                    ),
+                    TextButtonSection(),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
